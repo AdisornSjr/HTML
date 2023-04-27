@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border:1px solid cornflowerblue ;
+        }
+        input{
+            border: 1px solid sandybrown;
+        }
+    </style> <!-- check that กินพท เต็ม บรรทัด-->
+</head>
+<body>
+    <h1 align="center">This is simple form</h1>
+    <a href="index.html"่>กลับหน้าแรก</a>
+    <form align="center">
+        <div>
+            <label for="firstname">ชื่อจริง</label> <!-- กำหนดป้ายชือของช่องรับ input-->
+            <input type="txet" name="fname" placeholder="ป้อนชื่อ" > <!-- รับ input เป็น text--> <!--placeholder describe ใน text fill-->
+        </div> 
+        <div>
+            <label for="lastname">นามสกุล</label> <!-- กำหนดป้ายชือของช่องรับ input-->
+            <input type="txet" name="lname"> <!-- รับ input เป็น text-->
+        </div>
+        <div>
+            <label for="lastname">email</label> <!-- กำหนดป้ายชือของช่องรับ input-->
+            <input type="email" name="lname" placeholder="Gmail"> <!-- รับ input เป็น text-->
+        </div>
+        <div>
+            <label for="lastname">password</label> <!-- กำหนดป้ายชือของช่องรับ input-->
+            <input type="password" name="password"> <!-- รับ input เป็น text-->
+        </div>
+        <div>
+            <label for="">place</label>
+            <textarea name="" cols="30" rows="10">
+            <!--can insert text here!@!@!@-->
+            </textarea> <!--cols แนวตั่ง--> <!-- text area-->
+        </div>
+        <div>
+            <label for="">พวกตัวเลข</label> <!-- read only เปลี่ยนไม่ได้-->
+            <input type="number" name="age" min="0" max="200" value="100" readonly> <!--type number พวกตัวเลขกำหนด min max ได้-->
+            <!--value กำหนดเลย-->
+        </div>
+        <div>
+            <label for="">birthday</label>
+            <input type="date" name="birthdate"> 
+            
+        <div>
+            <label for="">tel</label>
+            <input type="tel" name="tel"> 
+            
+        <div>
+            <label for="">fav color</label>
+            <input type="color" name="color"> 
+           
+        </div>
+        <div>
+            <label for="">nums range</label>
+            <input type="range" name="range" value="20"> 
+            <!--value กำหนดเลย-->
+        </div>
+        <div>
+            <label for="">ระดับต่างๆ</label> 
+            <select name="edu" id=""> <!-- แบบให้กด select เอาเอง-->
+                <option value="ปริญญาตรี">x</option>
+                <option value="y">y</option>
+                <option value="Z" selected>Z</option> <!-- selected เลือกไว้เรืมต้น-->
+            </select>
+            
+        </div>
+        <div>
+            <label for="">เพศ</label>
+            <input type="radio" name="gender"> male <!-- radio คือ choice เดียว--> <!--naemจัดอยู่ same groupl-->
+            <input type="radio" name="gender"> female
+            <input type="radio" name="gender"> bi
+        </div>
+        <div> <!-- แบบติ๋กถูก checkbox-->
+            <label for="">fav thing</label>
+            <input type="checkbox" name="favth"> a
+            <input type="checkbox" name="favth"> b
+            <input type="checkbox" name="favth"> c
+            <input type="checkbox" name="favth"> d
+
+        </div>
+        <div> <!--แนบของ-->
+            <label for="">url</label>
+            <input type="url" required> <!--require ทำให้ต่องใส่-->
+        </div>
+        <div> <!-- summit bottom-->
+            <!--require ทำให้ต่องใส่-->
+            <input type="submit" value="upload"> กดส่ง <!--การส่ง data ไปประมวล-->
+            <button type="submit">เหมือนกัน</button> <!-- ทำปุ่มได้เหมือนกัน-->
+            <hr>
+            <input type="reset"> <!--reset แบบ form-->
+            <button type="reset">reset</botton>
+        </div>
+    </form>
+
+    
+</body>
+</html>

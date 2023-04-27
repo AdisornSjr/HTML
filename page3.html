@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--โชว๋ใหเห๋น-->
+    <style> 
+        div{
+            border: 1px solid red;
+        }
+        span{
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>PAGE 3</h1>
+    <a href="index.html">กลับหน้าแรก</a>
+    <h1>all in one</h1>    <!-- cellspacing ขยายรอบนอก-->
+    <table border="2" bgcolor="yellow" width="10%" cellpadding="20px"> <!--กำหนดต่างๆได้ เช่น สี widthกว้าง cellpadding ขยายใน-->
+        <thead align="center"> <!--set content ให้อยู่ center-->
+            <th>pic</th>
+            <th>name</th>
+            <th>price</th>
+            <th>purchase</th>
+        </thead>
+        <tbody align="center">
+            <tr bgcolor="pink"> <!-- ROW 1-->
+                <td> <!-- colspan รวมแถว-->
+                    <img src="https://images.autofun.co.th/file1/4c814914309143aaa3d5d0e844d0f390_324x216.jpg" alt="" height="200px" width="200">
+                </td>
+                <td>car</td>
+                <td>1M</td>
+                <td rowspan="2" bgcolor="green"> <!--row รวม-->
+                    <a href="#">buy</a>
+                </td>
+            </tr>
+            <tr bgcolor="white"> <!-- ROW 2-->
+                <td>
+                    <img src="https://images.autofun.co.th/file1/4c814914309143aaa3d5d0e844d0f390_324x216.jpg">
+                </td>
+                <td>car</td>
+                <td>1M</td>
+              
+
+            </tr>
+        
+        </tbody>
+        <tfoot> <!-- ท้ายตาราง-->
+            <tr> <!-- ROW 3-->
+                <td></td>
+                <td></td>
+                <td>SUM : 2M</td>
+            </tr>
+
+        </tfoot>
+    <span style="color: hotpink;"> <!--จัดให้อยู้ในกลุ่มเดียวกัน เปลี้ยน style ได้่ ไม่ขึ้นบรรดทัด-->
+        <h1>HTML5</h1>
+        <p>adisorn</p>
+    </span>
+    <span style="background-color: cyan;">
+        <h1>CSS</h1>
+        <p>adisorn</p>
+    </span>
+
+    <div> <!--ต่างแค่ขึ้นบรรทัดใหม่ จัดกลุมช่อมูล-->
+        <h1>HTML5</h1>
+        <p>adisorn</p>
+    </div>
+    <div>
+        <h1>cSS</h1>
+        <p>adisorn</p>
+    </div>
+    <h1>span</h1>
+    <span>aaaa</span>
+    <span>aaaa</span>
+    <span>aaaa</span>
+
+    <h1>div</h1>
+    <div>sdss</div>
+    <div>sdss</div>
+    <div>sdss</div>
+</body>
+</html>
