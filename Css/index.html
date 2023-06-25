@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS เบื่องต้น</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- use instyle.css -->
+    <link rel="stylesheet" href="instyle.css" />
+
+    <!-- THIS INTERNAL (Embeded)-->
+
+    <!--element selector-->
+    <!-- .naeme is for class-->
+    <!-- # is for id -->
+    <!--union selector-->
+
+    <!--กำหนดหลาย font ได้ font1,font2,font3 ในตอนไม่รองรับ-->
+    <style>
+      h1 {
+        color: rgba(149, 21, 234, 0.5);
+        font-size: 50px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        /* กรณี browser ไม่รับ font 1 2*/
+      }
+
+      .title {
+        color: rgb(85, 0, 255);
+        font-size: 20px;
+      }
+      #title {
+        color: rgb(255, 196, 210);
+        font-size: 20px;
+      }
+
+      .title,
+      #title,
+      p {
+        font-style: italic;
+      }
+
+      p.text {
+        font-weight: bolder;
+      }
+      .message {
+        /* px mm in */
+        font-size: 4pc;
+      }
+      div {
+        /* time 2 */
+        font-size: 2em;
+      }
+      body {
+        font-size: 10px;
+      }
+
+      /* * {}มีผลทุก tag --> */
+    </style>
+  </head>
+  <body>
+    <!--การกำหนด selector-->
+    <h1>BASIC CSS</h1>
+    <!-- for line-->
+    <hr />
+
+    <!--class-->
+    <h1 class="title">HTML 5</h1>
+
+    <!--id can not be the same id-->
+    <h1 id="title">CSS3</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi,
+      veritatis nam numquam ad odit nulla autem. Eaque ipsa consequatur quae.
+    </p>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a iure?
+      Inventore laborum autem officiis pariatur veniam neque deserunt ea in,
+      suscipit blanditiis amet maxime doloribus vel a eligendi itaque?
+    </p>
+    <p class="message">Lorem ipsum dolor sit amet.</p>
+
+    <div>CSS#</div>
+    <div>CSS#</div>
+    <div>CSS#</div>
+    <div>CSS#</div>
+
+    <div>
+      test1 (2*10 =20)
+      <div>
+        test2( 2*20 =40)
+        <div>
+          test3 (2*40 =80)
+          <div>test4 (2*80 =160)</div>
+        </div>
+      </div>
+    </div>
+    <!--check that px is the same value-->
+    <p style="font-size: 160px">LOL</p>
+
+    <hr />
+    <form action="">
+      <label for="">ชื่อ</label>
+      <input type="text" placeholder="input your name" />
+      <!--font family-->
+    </form>
+  </body>
+</html>

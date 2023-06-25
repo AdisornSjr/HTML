@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- none[ค่าว่าง] underline[เส้นใต้] overline[ขีดเหนือข้อความ] line-through[เส้นทับข้อความ]-->
+    <!--Text aligh [left,right,center,justify(กระจาย)]-->
+    <style>
+      .title {
+        text-decoration: underline;
+      }
+      #title {
+        text-decoration: line-through;
+      }
+      p {
+        text-decoration: line-through;
+      }
+      a {
+        text-decoration: none;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+      }
+      .box-1 {
+        background-color: aquamarine;
+        border-top-style: solid;
+        border-left-style: dashed;
+        border-top-color: red;
+      }
+      .box-2 {
+        background-color: bisque;
+        border: dotted 10px olivedrab;
+      }
+      .box-3 {
+        background-color: blueviolet;
+        border: dashed 10px black;
+      }
+      .box-4 {
+        background-color: blue;
+        border: solid 10px;
+        border-radius: 20px;
+        background-image: url("image/box-model.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /*if background have more than 1 pic use this code to fix it :)*/
+      }
+      #one {
+        /*make pic go center!!!*/
+        height: 200px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      #two {
+        height: 200px;
+        border-radius: 20px;
+        float: right;
+        /*this make look like โฆษณา web พนัน*/
+      }
+      .dec {
+        border: 10px dashed rgb(47, 189, 255);
+        padding: 10px;
+        margin: 50px;
+        /*from border to border make space*/
+        /*margin top right bottom left for short way*/
+      }
+      body {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1920px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg");
+        background-attachment: fixed;
+        /*for fix background when scroll web*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">HTML</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, sequi!
+    </p>
+    <hr />
+    <h1 id="title">CSS3</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam optio
+      est? Numquam ab maxime quidem incidunt facere quo provident sapiente
+      ducimus omnis rerum sint eveniet ea, perferendis culpa debitis.
+    </p>
+    <hr />
+    <a href="#">Click</a>
+
+    <!--border-->
+    <div class="box-1"></div>
+    <hr />
+    <div class="box-2"></div>
+    <hr />
+    <div class="box-3"></div>
+    <hr />
+    <div class="box-4"></div>
+    <hr />
+    <img src="image/box-model.JPG" alt="explain" id="one" />
+    <img src="image/meme.jpeg" alt=" alt="grabling" id="two">
+
+    <hr />
+    <p class="dec">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corrupti
+      praesentium rerum expedita dicta cumque architecto at quibusdam alias!
+      Iste vero culpa nam magnam quidem esse maxime architecto velit impedit!
+    </p>
+  </body>
+</html>
